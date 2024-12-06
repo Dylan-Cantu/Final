@@ -1,0 +1,427 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(149, 149, 194);
+    text-rendering: optimizeLegibility;
+    background-image: url(images/nexus.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+html, body {
+    overflow: hidden; /* Prevents any scrollbars from appearing */
+    height: 100%;     /* Ensures the body takes up the full height of the viewport */
+}
+
+/* Navbar styling */
+nav {
+    background-image: linear-gradient(to right, rgb(100, 163, 214), rgb(39, 140, 223), rgb(100, 163, 214));
+    padding: 20px;
+}
+
+img {
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: left;
+    border-radius: none;
+}
+
+.navbar {
+    list-style-type: none;  /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Display navbar items in a row */
+    justify-content: center;  /* Center navbar items */
+}
+
+.navbar li {
+    margin: 0 5px;  /* Space between navbar items */
+}
+
+.navbar a {
+    text-decoration: none;  /* Remove underline from links */
+    color: white;  /* Text color */
+    font-size: 18px;
+    padding: 8px 50px;  /* Add padding around the text */
+    border-radius: 4px;  /* Rounded corners for the links */
+    transition: background-color 0.8s ease;  /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    background-color: rgb(117, 177, 255);  /* Changes background when hovering */
+}
+
+/* Header Styling */
+
+h1 {
+    color: white;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 8px 8px;
+    font-size: 30px;
+}
+
+.product {
+        color: white;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 6%;
+        padding: 0px;
+        font-size: 30px;
+}
+
+#top {
+    padding-top: 30px;
+}
+
+.now {
+    color: rgb(117, 177, 255);
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#title {
+    color: rgb(117, 177, 255);
+    text-align: center;  /* Center the text */
+    margin-top: 0;
+    padding: 20px 40px; /* Padding around the header content */
+    display: flex;
+    justify-content: center; /* Space between logo and navigation */
+    align-items: center; /* Vertically center the items */
+    font-size: 80px;
+}
+
+  .review {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 40px;
+    color: black
+}
+
+/* Button Styling*/
+
+.btn {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    margin-left: 46%;
+    margin-top: 20px;
+    color: rgb(117, 177, 255);
+    background-color: White;
+    padding: 8px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.1); /* Multi-level shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
+    text-decoration: none;
+}
+
+.btn:hover {
+   background: rgb(117, 177, 255);
+   transform: scale(1.2);
+   transition: transform 0.3s ease;
+   color: white;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 8px 32px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
+}
+
+#next-btn {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    margin-left: 46%;
+    margin-top: 15px;
+    color: rgb(117, 177, 255);
+    background-color: White;
+    padding: 4px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.1); /* Multi-level shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
+    outline: none;
+  }
+  
+  #next-btn:hover {
+    background: rgb(117, 177, 255);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 8px 32px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
+    outline: none;
+  }
+
+/* Image Styling */
+
+h1 {
+    font-size: 24px;
+  }
+  
+  .image-container {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.05);
+  }
+  
+  .fullscreen {
+    object-fit: contain; /* Ensures the image scales properly in fullscreen */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+
+
+
+
+
+
+
+  /* Container for all pricing boxes */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 100px;
+  }
+  
+  /* Individual Pricing Box */
+  .pricing-box {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pricing-box:hover {
+    transform: translateY(-10px); /* Slightly lifts the box on hover */
+  }
+
+  .plans-head {
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;                    /* Padding inside the box */
+    display:flex;                 /* Makes the header take up only as much space as necessary */
+    border-radius: 8px;                    /* Optional: Rounds the corners of the box */
+    text-align: center;                    /* Centers the text horizontally */
+    margin-top: 100px;                      /* Adds top margin */
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 2rem;
+    color: rgb(117, 177, 255);
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Button Styling */
+  #price-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(117, 177, 255);
+    margin-top: 20px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #price-btn:hover {
+    background-color: rgb(117, 177, 255);
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  #price-btn:active {
+    background-color: rgb(117, 177, 255);
+    transform: scale(1); /* Reset scale when button is clicked */
+  }
+
+p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: large;
+    margin-top: 40px;
+}
+
+#contact-btn {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    margin-left: 46%;
+    margin-top: 0px;
+    color: rgb(117, 177, 255);
+    background-color: White;
+    padding: 8px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.1); /* Multi-level shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
+    text-decoration: none;
+}
+
+
+  
+
+/* Contact Page */
+
+#contact-body {
+    background-image: url('images/contact-background.jpg'); /* Adjust path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Styling the container for the form */
+.contact-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px; /* Max width for responsiveness */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+/* Form styling */
+.input-field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-field label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid rgb(117, 177, 255);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+.contact-btn {
+    background-color: rgb(117, 177, 255);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: rgb(117, 177, 255);
+    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/* Contact Page*/ 
+
+.invisible-box {
+    background-color: transparent;   /* Makes the background invisible */
+    padding: 200px;                    /* Adds space inside the box */
+    border: none;                     /* No visible border */
+    display: inline-block;            /* Ensures the box takes only as much width as needed */
+    width: fit-content;               /* Fits the content inside the box */
+}
+
+.header-text {
+    color: white;                     /* Text color */
+    font-size: 30px;                   /* Font size */
+    text-align: center;                /* Centers the header text */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.thanks {
+    display: block; /* Makes it a block-level element */
+    margin: 0 auto; /* Centers it horizontally */
+    margin-top: 0px; /* No top margin */
+    width: 50%; /* 50% of the parent element's width */
+    height: 50%; /* 50% of the parent element's height */
+    transition: transform 0.3s ease; /* Applies transition effect */
+    text-align: center; /* Centers text inside the element */
+    width: fit-content;
+    background-repeat: no-repeat;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
